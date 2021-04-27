@@ -1,6 +1,7 @@
 module Struct where
 
 import qualified Data.Set as Set
+import System.Random
 import Graphics.Gloss.Interface.Pure.Game
 
 -- Тип точки, предполагается как пиксель на экране и левый нижний угол объекта игры
@@ -25,7 +26,6 @@ data Asteroid = Asteroid
 data Ship = Ship
     { shipBody :: Object
     , shipVel :: Vector
-    , lives :: Int 
     }
 
 -- Структура снаряда корабля, имеет структуру объекта, скорость снаряда и прочность снаряда
@@ -43,4 +43,6 @@ data Game = Game
     , isEnd :: Bool
     , scores :: Integer
     , keys :: Set.Set Key
+    , randomGenX :: StdGen
+    , randomGenY :: StdGen
     }
