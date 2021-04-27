@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "asteroids:lib"
+
+    - path: "./app/Main.hs"
+      component: "asteroids:exe:asteroids-exe"
+
+    - path: "./app/Paths_asteroids.hs"
+      component: "asteroids:exe:asteroids-exe"
+
+    - path: "./test"
+      component: "asteroids:test:asteroids-test"
