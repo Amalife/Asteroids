@@ -1,6 +1,6 @@
 module Main where
 
-import Func
+import Kernel
 
 main :: IO ()
 main = run

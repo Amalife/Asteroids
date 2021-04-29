@@ -4,10 +4,6 @@ import qualified Data.Set as Set
 import System.Random
 import Graphics.Gloss.Interface.Pure.Game
 
--- Тип точки, предполагается как пиксель на экране и левый нижний угол объекта игры
---type Point = (Float, Float)
-
---type Vector = (Point, Point)
 -- Структура объекта игры, имеет свою позицию, высоту и ширину спрайта
 data Object = Object 
     { position :: Point

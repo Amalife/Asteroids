@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 24705dc720409611c23b91077475c7759d2e5a29ae27cdda07435c83676cefd6
+-- hash: fc44257a692b75932d5839b3569ff8288072ad014626f57601cbfe28303854c1
 
 name:           asteroids
 version:        0.1.0.0
@@ -27,8 +27,11 @@ source-repository head
 
 library
   exposed-modules:
-      Func
-      Lib
+      Asteroid
+      Bullet
+      Kernel
+      Player
+      Render
       Struct
   other-modules:
       Paths_asteroids
