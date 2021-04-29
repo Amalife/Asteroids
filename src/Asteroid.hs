@@ -45,7 +45,7 @@ destroyAst (velX, velY) (Asteroid (Object (x, y) h w) stage _)
 -- Функция, добавляющая астероиды в процессе игры
 addAst :: Game -> Game
 addAst game
-    | countAst (isNotStage3 (asteroids game)) == 3 = game { asteroids = makeAst (position (shipBody (player game))) (randomGenX game) (randomGenY game) : (asteroids game)}
+    | countAst (isNotStage3 (asteroids game)) <= 3 = game { asteroids = makeAst (position (shipBody (player game))) (randomGenX game) (randomGenY game) : (asteroids game)}
     | otherwise = game where
         countAst asts = length (filter (\x -> x == True) asts)
 
